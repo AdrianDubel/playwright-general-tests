@@ -1,0 +1,21 @@
+{
+  "name": "playwright-general-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "drugi.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianDubel/playwright-general-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianDubel/playwright-general-tests/issues"
+  },
+  "homepage": "https://github.com/AdrianDubel/playwright-general-tests#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.34.3"
+  }
+}
