@@ -21,4 +21,19 @@ test.describe('add_remove_elements', ()=> {
 
         expect(deleteBtnText==="Delete").toBeTruthy()
     })
+
+    test.only('check if element disappear when click on it', async ({page}) =>{
+
+        await page.goto('add_remove_elements/')
+        const btnAddElement = page.getByRole('button', { name: 'Add Element'})
+
+        await btnAddElement.click()
+
+        const deleteBtn = page.locator('.added-manually')
+        await expect(deleteBtn).toBeVisible()
+
+        await deleteBtn.click()
+        expect(await deleteBtn.isVisible()).toBeFalsy()
+
+    })
 })
